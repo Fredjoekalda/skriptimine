@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# saavutusteskript
+#
+echo "Fred Jõekalda " # väljasta reavahetusega Fred Jõekalda
+echo "ISP117" # väljasta reavahetusega ISP117
+echo "Aine tundub päris tore ja huvitav" # väljasta reavahetusega
+#
+# skripti lõpp
