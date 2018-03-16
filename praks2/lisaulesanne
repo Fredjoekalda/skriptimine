@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# süsteemi info
+#
+# skripti algus
+#
+uname -a # hostname
+ip a # internal ip
+cat /etc/resolv.conf |grep -i '^nameserver'|head -n1|cut -d ' '-f2 # name servers
+w # logged in users
+free -m # ram usages
+free -h # swap usages
+df -H # disk usage
+uptime # system uptime
+#
+#
