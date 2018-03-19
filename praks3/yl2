@@ -1,0 +1,6 @@
+# skripti algus
+#
+# failide otsimine ja sorteerimine
+#
+find /var -name *.log 2>/dev/null | sort -n
+# skripti lõpp
