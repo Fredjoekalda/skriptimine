@@ -2,12 +2,12 @@
 #
 # kuupäev ja aeg
 #
-echo -n "Today is "
-date "+%A, %B, %d, %Y"
-echo -n "Time is "
-date "+%T"
-echo -n "Calendar of"
-cal
+echo -n "Today is " # Kirjutame järgmise käsu ette today is`
+date "+%A, %B, %d, %Y" # kuvab tänase kuupäeva
+echo -n "Time is " # Kirjutame järgmise käsu ette time is
+date "+%T" # kuvab praeguse kellaaja
+echo -n "Calendar of" # Kirjutame järgmise käsu ette calendar of
+cal # Kuvab praeguse kuu kalendri
 #
 # skripti lõpp
  
