@@ -1,0 +1,6 @@
+# Skripti algus
+#
+# Arvuti tööaeg
+# 
+uptime | cut -f1 -d "," # kuvab arvuti tööaja
+# skripti lõpp
