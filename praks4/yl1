@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# Skripti algus
+#
+# Kasutaja nime küsimine ja tema tervitamine
+#
+echo -n "Sisesta enda ees- ja perenimi:"
+read eesnimi perenimi
+echo "Tere, $eesnimi $perenimi"
+#
+# skripti lõpp
