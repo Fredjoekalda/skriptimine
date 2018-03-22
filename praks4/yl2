@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+# Skripti algus
+#
+# Küpsise tordi valmistamine
+#
+echo -n "sisesta aluskandiku pikkus(cm):"
+read k_pikkus
+echo -n "sisesta aluskandiku laius(cm):"
+read k_laius
+kandik=`expr $k_pikkus \* $k_laius`
+echo -n "sisesta küpsise suurus(cm):"
+read kypsis
+echo -n "sisesta tordi kihtide arv:"
+read kihtide
+echo -n "sisesta mitu küpsist on ühes pakis:"
+read pakis
+echo "poest tuleb osta" `expr $k_pikkus \* $k_laius / $kypsis \* $kypsis \* $kihtide / $pakis` "pakki"
