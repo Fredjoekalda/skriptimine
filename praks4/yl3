@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# Skripti algus
+#
+echo -n "Mitu reisijat on grupis?:"
+read reisijat
+echo -n "Mitu kohta on bussis?:"
+read kohta
+kokku=`expr $kohta - $reisijat`
+taidetud=`expr $reisijat / $kohta`
+echo "Täielikult täidetud busse on" `expr $taidetud` "maha jäi" `expr $kokku` "inimest"
+#
+# Skripti lõpp
