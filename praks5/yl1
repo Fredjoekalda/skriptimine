@@ -1,21 +1,16 @@
 #!/bin/bash
 #
-# kolmnurga pindala arvutamine
-#
-# Skript algab
+# täisnurkse kolmnurga arvutamine
 #
 echo
-echo -n "Sisesta a kylje vaartus: "
+echo -n "sisesta a kylje vaartus: "
 read a
-echo -n "Sisesta b kylje vaartus: "
+echo -n "sisesta b kylje vaartus: "
 read b
-echo -n "Sisesta c kylje vaartus: "
-read c
+aruut=`echo "scale=2;($a^2)" | bc` #arvutab a kylje ruudu
+bruut=`echo "scale=2;($b^2)" | bc` #arvutab b kylje ruudu
+summa=`echo "scale=2;($aruut+$bruut)" | bc` #arvutab a ja b kylje summa
+c=`echo "scale=2;sqrt ($summa)" | bc` #vastus
+echo c= $c #väljastab vastuse
 #
-# arvutamine
-#
-p=`echo "scale=2;($a+$b+$c)/2" | bc`
-s=`echo "scale=2;sqrt($p*($p-$a)*($p-$b)*($p-$c))" | bc`
-echo "Pindala = $s"
-#
-# skripti lõpp
+# skript lõppes
