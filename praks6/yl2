@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+# Skripti algus
+#
+echo -n "Mitu reisijat on grupis?:"
+read reisijat
+echo -n "Mitu kohta on bussis?:"
+read kohta
+bussid=$(($reisijat / $kohta))
+ylejaanud=$(($reisijat % $kohta))
+if test $ylejaanud -gt 0
+then
+bussid=$(($bussid + 1))
+fi
+echo "Täielikult täidetud busse on $bussid"
+#
+# Skripti lõpp
