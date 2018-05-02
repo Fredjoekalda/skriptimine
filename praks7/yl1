@@ -1,4 +1,8 @@
 #!/bin/bash
+#
+# Vanusega määramine
+#
+
 echo -n "Sisesta enda vanus :" #kasutaja sisestab enda vanuse
 read vanus #vanus
 if [[ $vanus -ge 0 ]] && [[ $vanus -le 11 ]] #kui vanus on vahemikus 0-11
