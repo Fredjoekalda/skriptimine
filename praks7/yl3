@@ -1,0 +1,28 @@
+#!/bin/bash
+#
+#Kasutaja tervitus
+#
+#
+
+echo -n "Sisesta kasutaja nimi: " #küsib kasutaja nime
+read kasutaja #kasutaja nimi
+echo -n "Sisesta kellaaeg: " #küsib aega
+read aeg #aja väärtus
+
+if [[ $aeg -ge 6 ]] && [[ $aeg -le 11 ]] #kui on kell vahemikus 6-11
+then
+	echo "Tere hommikust, $kasutaja"  #ütleb tere hommikust
+elif [[ $aeg -ge 12 ]] && [[ $aeg -le 17 ]] #kui on aeg vahemikus 12-17
+then
+	echo "Tere päevast, $kasutaja" #ütleb tere päevast
+elif [[ $aeg -ge 18 ]] && [[ $aeg -le 21 ]] #kui aeg on vahemikus 18-21
+then
+	echo "Tere õhtust, $kasutaja" #ütleb tere õhtust
+elif [[ $aeg -ge 22 ]] && [[ $aeg -le 24 ]] #kui aeg on vahemikus 22-24
+then
+	echo "Head ööd, $kasutaja" #ütleb head ööd
+elif [[ $aeg -ge 1 ]] && [[ $aeg -le 5 ]] #kui aeg on vahemikus 1-5
+then
+	echo "Head ööd, $kasutaja" #ütleb head ööd
+fi
+
