@@ -1,5 +1,7 @@
 #!/bin/bash
 #
+# Mis kuu on
+#
 echo "Sisestage kuu number"
 read kuu
 
