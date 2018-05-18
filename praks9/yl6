@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+# Ülesanne 6
+#
+# Skripti algus
+#
+echo -n "Sisesta ridade arv: "
+read rida
+for((r=1; r<rida; r++))
+do # O kolmnurk
+ for((v=1; v<=($rida-1-$r); v++))
+ do
+  echo -n "o "
+ done # * kolmnurk
+ for((v=1; v<=$r; v++))
+ do
+  echo -n "* "
+ done
+ echo
+done
+#
+# Skripti lõpp
+#
